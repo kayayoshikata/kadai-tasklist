@@ -1,0 +1,10 @@
+<h1>new task</h1>
+
+<%= form_for(@task) do |f| %>
+    <%= f.label :content, 'タスク内容' %>
+    <%= f.text_field :content %>
+    
+    <%= f.submit 'post' %>
+<% end %>
+
+<%= link_to 'back', tasks_path %>

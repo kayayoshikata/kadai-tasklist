@@ -1,0 +1,10 @@
+<h1>id: <%= @task.id %>のタスク編集 </h1>
+
+<%= form_for(@task) do |f| %>
+    <%= f.label :content, 'task' %>
+    <%= f.text_field :content %>
+
+    <%= f.submit 'post' %>
+<% end %>
+
+<%= link_to 'top', tasks_path%>
