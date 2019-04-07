@@ -48,7 +48,7 @@ class TasksController < ApplicationController
         @task.destroy
         
         flash[:success] = 'task削除完了'
-        redirect_to tasks_url(fallback_location: root_path)
+        redirect_to tasks_url
         
     end
 
